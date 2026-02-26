@@ -48,15 +48,11 @@ function conditionWin() {
 
 function rock(computerMove) {
   if (computerMove === "paper") {
-    computerScore++;
-    scoreComputer.innerHTML = computerScore;
-    resultText.innerHTML = "";
+    computerWin();
   } else if (computerMove === "rock") {
     resultText.innerHTML = "Ничья попробуй ещё раз";
   } else if (computerMove === "scissors") {
-    playerScore++;
-    scorePlayer.innerHTML = playerScore;
-    resultText.innerHTML = "";
+    playerWin();
   }
 }
 
@@ -64,26 +60,30 @@ function paper(computerMove) {
   if (computerMove === "paper") {
     resultText.innerHTML = "Ничья попробуй ещё раз";
   } else if (computerMove === "rock") {
-    playerScore++;
-    scorePlayer.innerHTML = playerScore;
-    resultText.innerHTML = "";
+    playerWin();
   } else if (computerMove === "scissors") {
-    computerScore++;
-    scoreComputer.innerHTML = computerScore;
-    resultText.innerHTML = "";
+    computerWin();
   }
 }
 
 function scessors(computerMove) {
   if (computerMove === "paper") {
-    playerScore++;
-    scorePlayer.innerHTML = playerScore;
-    resultText.innerHTML = "";
+    playerWin();
   } else if (computerMove === "rock") {
-    computerScore++;
-    scoreComputer.innerHTML = computerScore;
-    resultText.innerHTML = "";
+    computerWin();
   } else if (computerMove === "scissors") {
     resultText.innerHTML = "Ничья попробуй ещё раз";
   }
+}
+
+function playerWin() {
+  playerScore++;
+  scorePlayer.innerHTML = playerScore;
+  resultText.innerHTML = "";
+}
+
+function computerWin() {
+  computerScore++;
+  scoreComputer.innerHTML = computerScore;
+  resultText.innerHTML = "";
 }
