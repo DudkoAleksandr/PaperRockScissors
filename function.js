@@ -4,6 +4,7 @@ function addImg(src, gamer) {
   const img = document.createElement("img");
   img.src = src;
   img.width = 100;
+  gamer.innerHTML = ''
   gamer.append(img);
 }
 

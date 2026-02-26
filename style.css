@@ -36,6 +36,16 @@
 .score__result {
   font-size: 20px;
 }
+.img__player {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img__computer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .main {
   display: flex;
