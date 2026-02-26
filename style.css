@@ -6,8 +6,8 @@
 .hide__game {
   display: none;
 }
-.hide__start{
-    display: none;
+.hide__start {
+  display: none;
 }
 .game__main {
   display: flex;
@@ -15,9 +15,9 @@
   align-items: center;
 }
 .result__text {
-    font-size: 25px;
-    color: orange;
-    margin-top: 60px;
+  font-size: 25px;
+  color: orange;
+  margin-top: 60px;
 }
 .btn__section {
   display: flex;
@@ -47,7 +47,7 @@
   margin-top: 130px;
 }
 .main__titles-option {
-    margin-top: 160px;
+  margin-top: 160px;
 }
 .main__btn-play {
   margin-top: 70px;
@@ -60,4 +60,38 @@
   color: #dfe0e3;
   padding: 20px 60px;
   font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .btn__section {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 590px) {
+  .btn__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .btn__exit {
+    grid-column: 1/3;
+  }
+  .btn__scissors {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .btn__section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .btn {
+    width: 170px;
+  }
 }
