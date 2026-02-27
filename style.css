@@ -15,6 +15,7 @@
   align-items: center;
 }
 .result__text {
+  height: 30px;
   font-size: 25px;
   color: orange;
   margin-top: 60px;
@@ -37,11 +38,13 @@
   font-size: 20px;
 }
 .img__player {
+  height: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .img__computer {
+  height: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -57,7 +60,7 @@
   margin-top: 130px;
 }
 .main__titles-option {
-  margin-top: 160px;
+  margin-top: 60px;
 }
 .main__btn-play {
   margin-top: 70px;
